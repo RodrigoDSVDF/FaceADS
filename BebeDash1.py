@@ -8,7 +8,7 @@ import plotly.express as px
 
 @st.cache_data  # Corrigindo o decorador para o cache correto
 def load_data():
-    data = pd.read_excel(r"C:\Users\Rodrigo_df\Downloads\Bebe.xlsx")
+    data = pd.read_excel("Bebe")
     data['Day'] = pd.to_datetime(data['Day'], errors='coerce')
     return data
 
